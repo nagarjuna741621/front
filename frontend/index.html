@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">Welcome to Your Car Rental System</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cars">Available Cars</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/dashboard">My Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section" class="active-section">
+            <div class="hero">
+                <div class="container">
+                    <h2>Find Your Perfect Ride</h2>
+                    <p>Search for cars by location, pick-up date, and return date.</p>
+                    <a href="https://www.carwale.com/new-cars/" class="btn btn-primary">Browse All Cars</a>
+                </div>
+            </div>
+
+            <section class="featured-cars container">
+                <h2>Featured Vehicles</h2>
+                <div class="car-list" id="featured-cars-list">
+                    
+
+                    
+
+            </section>
+        </section>
+
+        <section id="cars-section" class="container" style="display:none;">
+            <h2>Available Cars</h2>
+            <div class="car-list" id="all-cars-static-list"> 
+                
+                <div class="car-card">
+                    <img src="images/honda crv.jpg" alt="Honda CRV">
+                    <div class="car-card-content">
+                        <h3>Honda CRV (2022)</h3>
+                        <p><strong>License:</strong> AP04CRV456</p>
+                        <p><strong>Type:</strong> SUV | <strong>Fuel:</strong> Petrol</p>
+                        <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 5</p>
+                        <p><strong>Location:</strong> Vijayawada</p>
+                        <p class="price">$70.00 / day</p>
+<button class="btn btn-primary book-car-btn" data-car-id="sample-id-1" onclick="alert('Book Now - Available Cars Clicked!'); console.log('Direct click on Available Cars logged!');">Book Now</button>                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="images/tesla-model3.jpg" alt="Tesla Model 3">
+                    <div class="car-card-content">
+                        <h3>Tesla Model 3 (2024)</h3>
+                        <p><strong>License:</strong> AP04TSL789</p>
+                        <p><strong>Type:</strong> Electric | <strong>Fuel:</strong> Electric</p>
+                        <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 5</p>
+                        <p class="price">$90.00 / day</p>
+                        <button class="btn btn-primary book-car-btn" data-car-id="sample-id-3">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/audi-r8.jpg" alt="AUDI-R8 ">
+                    <div class="car-card-content">
+                        <h3>AUDI-R8 (2023)</h3>
+                        <p><strong>License:</strong> AP04BMW345</p>
+                        <p><strong>Type:</strong> Luxury Sedan | <strong>Fuel:</strong> Diesel</p>
+                        <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 2</p>
+                        <p><strong>Location:</strong> Hyderabad</p>
+                        <p class="price">$190.00 / day</p>
+                        <button class="btn btn-primary book-car-btn" data-car-id="sample-id-4">Book Now</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="car-card">
+                    <img src="images/bmw-5series.jpg" alt="BMW 5 Series">
+                    <div class="car-card-content">
+                        <h3>BMW 5 Series (2023)</h3>
+                        <p><strong>License:</strong> AP04BMW345</p>
+                        <p><strong>Type:</strong> Luxury Sedan | <strong>Fuel:</strong> Diesel</p>
+                        <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 5</p>
+                        <p><strong>Location:</strong> Hyderabad</p>
+                        <p class="price">$150.00 / day</p>
+                        <button class="btn btn-primary book-car-btn" data-car-id="sample-id-6">Book Now</button>
+                    </div>
+                </div>
+                <div class="car-card">
+                        <img src="images/range-rover.jpg" alt="Range Rover">
+                        <div class="car-card-content">
+                            <h3>Range Rover Evoque (2023)</h3>
+                            <p><strong>License:</strong> AP04RRO678</p>
+                            <p><strong>Type:</strong> Luxury SUV | <strong>Fuel:</strong> Diesel</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 5</p>
+                            <p><strong>Location:</strong> Chennai</p>
+                            <p class="price">$220.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-7">Book Now</button>
+                        </div>
+                    </div>
+                         <div class="car-card">
+                        <img src="images/mustang.jpg" alt="Ford Mustang">
+                        <div class="car-card-content">
+                            <h3>Ford Mustang GT (2023)</h3>
+                            <p><strong>License:</strong> AP04MUS345</p>
+                            <p><strong>Type:</strong> Muscle Car | <strong>Fuel:</strong> Petrol</p>
+                            <p><strong>Trans:</strong> Manual | <strong>Seats:</strong> 4</p>
+                            <p><strong>Location:</strong> Bangalore</p>
+                            <p class="price">$200.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-8">Book Now</button>
+                        </div>
+                    </div>
+                     <div class="car-card">
+                        <img src="images/mclaren.jpg" alt="McLaren">
+                        <div class="car-card-content">
+                            <h3>McLaren 720S (2022)</h3>
+                            <p><strong>License:</strong> AP04MCL012</p>
+                            <p><strong>Type:</strong> Supercar | <strong>Fuel:</strong> Petrol</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 2</p>
+                            <p><strong>Location:</strong> Hyderabad</p>
+                            <p class="price">$650.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-9">Book Now</button>
+                        </div>
+                    </div>
+                      <div class="car-card">
+                        <img src="images/koenigsegg.jpg" alt="Koenigsegg">
+                        <div class="car-card-content">
+                            <h3>Koenigsegg Jesko (2024)</h3>
+                            <p><strong>License:</strong> AP04KNG456</p>
+                            <p><strong>Type:</strong> Hypercar | <strong>Fuel:</strong> Petrol</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 2</p>
+                            <p><strong>Location:</strong> Mumbai</p>
+                            <p class="price">$1000.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-10">Book Now</button>
+                        </div>
+                    </div>
+                     
+                    <div class="car-card">
+                        <img src="images/lamborghini.jpg" alt="Lamborghini">
+                        <div class="car-card-content">
+                            <h3>Lamborghini Aventador (2023)</h3>
+                            <p><strong>License:</strong> AP04LAM789</p>
+                            <p><strong>Type:</strong> Supercar | <strong>Fuel:</strong> Petrol</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 2</p>
+                            <p><strong>Location:</strong> Pune</p>
+                            <p class="price">$700.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-11">Book Now</button>
+                        </div>
+                    </div>
+                     <div class="car-card">
+                        <img src="images/ferrari.png" alt="Ferrari">
+                        <div class="car-card-content">
+                            <h3>Ferrari 488 GTB (2021)</h3>
+                            <p><strong>License:</strong> AP04FER890</p>
+                            <p><strong>Type:</strong> Sports Car | <strong>Fuel:</strong> Petrol</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 2</p>
+                            <p><strong>Location:</strong> Goa</p>
+                            <p class="price">$500.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-12">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <img src="images/g-wagon.jpg" alt="Mercedes G-Wagon">
+                        <div class="car-card-content">
+                            <h3>Mercedes G-Wagon (2023)</h3>
+                            <p><strong>License:</strong> AP04GWA123</p>
+                            <p><strong>Type:</strong> Luxury SUV | <strong>Fuel:</strong> Diesel</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 5</p>
+                            <p><strong>Location:</strong> Delhi</p>
+                            <p class="price">$350.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-13">Book Now</button>
+                        </div>
+                    </div>
+                     <div class="car-card">
+                        <img src="images/cybertruck.jpg" alt="Tesla Cybertruck">
+                        <div class="car-card-content">
+                            <h3>Tesla Cybertruck (2024)</h3>
+                            <p><strong>License:</strong> AP04CYB234</p>
+                            <p><strong>Type:</strong> Electric Truck | <strong>Fuel:</strong> Electric</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 6</p>
+                            <p><strong>Location:</strong> Hyderabad</p>
+                            <p class="price">$250.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-14">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <img src="images/defender.jpg" alt="Land Rover Defender">
+                        <div class="car-card-content">
+                            <h3>Land Rover Defender (2022)</h3>
+                            <p><strong>License:</strong> AP04DEF567</p>
+                            <p><strong>Type:</strong> SUV | <strong>Fuel:</strong> Diesel</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 7</p>
+                            <p><strong>Location:</strong> Visakhapatnam</p>
+                            <p class="price">$180.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-15">Book Now</button>
+                        </div>
+                    </div>
+                     <div class="car-card">
+                        <img src="images/bentaly.jpg" alt="Bentley">
+                        <div class="car-card-content">
+                            <h3>Bentley Continental GT (2023)</h3>
+                            <p><strong>License:</strong> AP04BEN901</p>
+                            <p><strong>Type:</strong> Luxury Coupe | <strong>Fuel:</strong> Petrol</p>
+                            <p><strong>Trans:</strong> Automatic | <strong>Seats:</strong> 4</p>
+                            <p><strong>Location:</strong> Chennai</p>
+                            <p class="price">$400.00 / day</p>
+                            <button class="btn btn-primary book-car-btn" data-car-id="sample-id-16">Book Now</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+
+        <section id="login-section" class="container" style="display:none;">
+            <h2>User Login</h2>
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <p>Don't have an account? <a href="/register" class="link-btn">Register here</a></p>
+            </form>
+            <div id="login-message" class="message-area"></div>
+        </section>
+
+        <section id="register-section" class="container" style="display:none;">
+            <h2>Register Account</h2>
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password2">Confirm Password:</label>
+                    <input type="password" id="register-password2" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                <p>Already have an account? <a href="/login" class="link-btn">Login here</a></p>
+            </form>
+            <div id="register-message" class="message-area"></div>
+        </section>
+
+        <section id="dashboard-section" class="container" style="display:none;">
+            <div id="dashboard-content">
+                <div id="user-dashboard-view" class="dashboard-view">
+                    <h2>Welcome to Your Dashboard</h2>
+                    <p>Your upcoming and past bookings will be displayed here.</p>
+                    <div id="user-bookings-list">
+                        <p>Loading your bookings...</p>
+                    </div>
+                </div>
+
+                <div id="admin-dashboard-view" class="dashboard-view" style="display:none;">
+                    <h2>Admin Panel</h2>
+                    <p>Manage cars and user roles here.</p>
+
+                    <section class="add-car-section">
+                        <h3>Add New Car</h3>
+                        <form id="add-car-form" class="form">
+                            <div class="form-group">
+                                <label for="car-make">Make:</label>
+                                <input type="text" id="car-make" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-model">Model:</label>
+                                <input type="text" id="car-model" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-year">Year:</label>
+                                <input type="number" id="car-year" min="1900" max="2050" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-licensePlate">License Plate:</label>
+                                <input type="text" id="car-licensePlate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-rentalPricePerDay">Price Per Day ($):</label>
+                                <input type="number" id="car-rentalPricePerDay" step="0.01" min="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-carType">Car Type (e.g., Sedan, SUV):</label>
+                                <input type="text" id="car-carType" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-fuelType">Fuel Type:</label>
+                                <select id="car-fuelType" required>
+                                    <option value="">Select Fuel Type</option>
+                                    <option value="Petrol">Petrol</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Electric">Electric</option>
+                                    <option value="Hybrid">Hybrid</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-transmission">Transmission:</label>
+                                <select id="car-transmission" required>
+                                    <option value="">Select Transmission</option>
+                                    <option value="Automatic">Automatic</option>
+                                    <option value="Manual">Manual</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-seats">Seats:</label>
+                                <input type="number" id="car-seats" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-imageUrl">Image URL (Optional):</label>
+                                <input type="file" id="car-imageUrl" placeholder="e.g., https://example.com/car.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label for="car-location">Location:</label>
+                                <input type="text" id="car-location" required>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-secondary">Add Car</button>
+                            </div>
+                        </form>
+                        <div id="add-car-message" class="message-area"></div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Car Rental Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js" defer></script> </body>
+</html>
