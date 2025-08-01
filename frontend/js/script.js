@@ -43,7 +43,7 @@ window.parseJwt = (token) => {
 };
 
 // --- API Base URL ---
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://car-rental-system-noi9.onrender.com/api';
 
 // --- SPA Router Core Logic ---
 
